@@ -6,28 +6,28 @@ export const Slide03Actions: ContentSlide = {
   title: 'IV. EXECUTION ROADMAP',
   subtitle: '24-Month Playbook — Capital Deployment, KPIs & Responsible Teams',
   content: (
-    <div className="h-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 lg:p-12 pt-28 bg-slate-100">
+    <div className="h-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 lg:p-12 bg-[#0b1424] text-slate-200">
       <section className="relative pl-6">
-        <span className="absolute left-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-emerald-500 to-indigo-500" />
+        <span className="absolute left-2 top-0 bottom-0 w-[3px] rounded-full bg-gradient-to-b from-blue-500 via-emerald-500 to-indigo-500" />
         <div className="space-y-8">
-          <article className="relative rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <span className="absolute -left-[38px] top-8 flex h-10 w-10 items-center justify-center rounded-full border border-blue-200 bg-blue-600 text-white text-sm font-semibold">
+          <article className="relative rounded-2xl border border-slate-800 bg-[#111b30] p-6 shadow-sm">
+            <span className="absolute -left-[38px] top-8 flex h-10 w-10 items-center justify-center rounded-full border border-blue-500/50 bg-blue-600 text-white text-sm font-semibold">
               01
             </span>
             <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-blue-600 mb-2">Weeks 0-8</div>
-                <h3 className="text-xl font-semibold text-slate-900">Formation Sprint · $125K Capex</h3>
-                <p className="text-sm text-slate-600">Standing up the Delaware LP, tokenization rails, and compliance architecture.</p>
+                <div className="text-xs uppercase tracking-[0.3em] text-blue-300 mb-2">Weeks 0-8</div>
+                <h3 className="text-xl font-semibold text-white">Formation Sprint · $125K Capex</h3>
+                <p className="text-sm text-slate-300">Standing up the Delaware LP, tokenization rails, and compliance architecture.</p>
               </div>
-              <div className="flex items-center gap-2 text-sm text-blue-600">
+              <div className="flex items-center gap-2 text-sm text-blue-300">
                 <Calendar size={16} />
                 <span>Owner: Capital Formation Pod</span>
               </div>
             </header>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-700">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-300">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Deliverables</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Deliverables</div>
                 <ul className="space-y-2">
                   <li>• LP / GP entities, LPA, PPM, subscription docs</li>
                   <li>• Tokenized issuance stack live (Plume.org)</li>
@@ -35,7 +35,7 @@ export const Slide03Actions: ContentSlide = {
                 </ul>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">KPIs</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">KPIs</div>
                 <ul className="space-y-2">
                   <li>• Fund legal readiness certificate</li>
                   <li>• Smart-contract audit sign-off</li>
@@ -43,33 +43,33 @@ export const Slide03Actions: ContentSlide = {
                 </ul>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Financial Impact</div>
-                <div className="rounded-lg bg-blue-50 border border-blue-100 p-3">
-                  <div className="text-sm font-semibold text-blue-700">Revenue Capacity +$560K</div>
-                  <div className="text-xs text-blue-600 mt-1">Immediate ability to raise first $1M close.</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Financial Impact</div>
+                <div className="rounded-lg border border-blue-500/40 bg-blue-900/20 p-3">
+                  <div className="text-sm font-semibold text-blue-200">Revenue Capacity +$560K</div>
+                  <div className="text-xs text-blue-200/80 mt-1">Immediate ability to raise first $1M close.</div>
                 </div>
               </div>
             </div>
           </article>
 
-          <article className="relative rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <span className="absolute -left-[38px] top-8 flex h-10 w-10 items-center justify-center rounded-full border border-emerald-200 bg-emerald-600 text-white text-sm font-semibold">
+          <article className="relative rounded-2xl border border-slate-800 bg-[#111b30] p-6 shadow-sm">
+            <span className="absolute -left-[38px] top-8 flex h-10 w-10 items-center justify-center rounded-full border border-emerald-500/50 bg-emerald-600 text-white text-sm font-semibold">
               02
             </span>
             <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-emerald-600 mb-2">Months 2-12</div>
-                <h3 className="text-xl font-semibold text-slate-900">Tokenized Raise & Core Build · $1.0M Capex</h3>
-                <p className="text-sm text-slate-600">Scaling capital, launching digital asset products, modernizing operations.</p>
+                <div className="text-xs uppercase tracking-[0.3em] text-emerald-300 mb-2">Months 2-12</div>
+                <h3 className="text-xl font-semibold text-white">Tokenized Raise & Core Build · $1.0M Capex</h3>
+                <p className="text-sm text-slate-300">Scaling capital, launching digital asset products, modernizing operations.</p>
               </div>
-              <div className="flex items-center gap-2 text-sm text-emerald-600">
+              <div className="flex items-center gap-2 text-sm text-emerald-300">
                 <Target size={16} />
                 <span>Owner: Distribution & Product Squad</span>
               </div>
             </header>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-700">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-300">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Deliverables</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Deliverables</div>
                 <ul className="space-y-2">
                   <li>• Rolling monthly closes ($5M target)</li>
                   <li>• BTC/ETH core sleeve, DeFi marketplace live</li>
@@ -77,7 +77,7 @@ export const Slide03Actions: ContentSlide = {
                 </ul>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">KPIs</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">KPIs</div>
                 <ul className="space-y-2">
                   <li>• Advisory fee yield: 100 → 135 bps</li>
                   <li>• AUM in digital mandates: $60M</li>
@@ -85,33 +85,33 @@ export const Slide03Actions: ContentSlide = {
                 </ul>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Financial Impact</div>
-                <div className="rounded-lg bg-emerald-50 border border-emerald-100 p-3">
-                  <div className="text-sm font-semibold text-emerald-700">Revenue Expansion +$1.57M</div>
-                  <div className="text-xs text-emerald-600 mt-1">Run-rate revenue $4.1M by Month 12.</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Financial Impact</div>
+                <div className="rounded-lg border border-emerald-500/40 bg-emerald-900/20 p-3">
+                  <div className="text-sm font-semibold text-emerald-200">Revenue Expansion +$1.57M</div>
+                  <div className="text-xs text-emerald-200/80 mt-1">Run-rate revenue $4.1M by Month 12.</div>
                 </div>
               </div>
             </div>
           </article>
 
-          <article className="relative rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <span className="absolute -left-[38px] top-8 flex h-10 w-10 items-center justify-center rounded-full border border-indigo-200 bg-indigo-600 text-white text-sm font-semibold">
+          <article className="relative rounded-2xl border border-slate-800 bg-[#111b30] p-6 shadow-sm">
+            <span className="absolute -left-[38px] top-8 flex h-10 w-10 items-center justify-center rounded-full border border-indigo-500/50 bg-indigo-600 text-white text-sm font-semibold">
               03
             </span>
             <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-indigo-600 mb-2">Months 12-24</div>
-                <h3 className="text-xl font-semibold text-slate-900">Portfolio Scaling & Exit Prep · $1.1M Capex</h3>
-                <p className="text-sm text-slate-600">Apply playbook across acquisitions, validate fintech KPIs, initiate M&A dialogue.</p>
+                <div className="text-xs uppercase tracking-[0.3em] text-indigo-300 mb-2">Months 12-24</div>
+                <h3 className="text-xl font-semibold text-white">Portfolio Scaling & Exit Prep · $1.1M Capex</h3>
+                <p className="text-sm text-slate-300">Apply playbook across acquisitions, validate fintech KPIs, initiate M&A dialogue.</p>
               </div>
-              <div className="flex items-center gap-2 text-sm text-indigo-600">
+              <div className="flex items-center gap-2 text-sm text-indigo-300">
                 <Rocket size={16} />
                 <span>Owner: Portfolio Ops & Corporate Dev</span>
               </div>
             </header>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-700">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-300">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Deliverables</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Deliverables</div>
                 <ul className="space-y-2">
                   <li>• Acquire 2-3 bolt-on RIAs ($12M revenue combined)</li>
                   <li>• Shared services center + automation layer live</li>
@@ -119,7 +119,7 @@ export const Slide03Actions: ContentSlide = {
                 </ul>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">KPIs</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">KPIs</div>
                 <ul className="space-y-2">
                   <li>• Revenue run-rate: $5.6M | EBITDA margin: 56%</li>
                   <li>• Tech-enabled revenue mix: 62%</li>
@@ -127,10 +127,10 @@ export const Slide03Actions: ContentSlide = {
                 </ul>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Financial Impact</div>
-                <div className="rounded-lg bg-indigo-50 border border-indigo-100 p-3">
-                  <div className="text-sm font-semibold text-indigo-700">Value Creation +$1.02M EBITDA</div>
-                  <div className="text-xs text-indigo-600 mt-1">Triggers 8-12x revenue buyer conversations.</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Financial Impact</div>
+                <div className="rounded-lg border border-indigo-500/40 bg-indigo-900/20 p-3">
+                  <div className="text-sm font-semibold text-indigo-200">Value Creation +$1.02M EBITDA</div>
+                  <div className="text-xs text-indigo-200/80 mt-1">Triggers 8-12x revenue buyer conversations.</div>
                 </div>
               </div>
             </div>
@@ -138,16 +138,16 @@ export const Slide03Actions: ContentSlide = {
         </div>
       </section>
 
-      <section className="rounded-xl border border-slate-200 bg-slate-900 text-white p-6 shadow-sm">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <section className="rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 p-6 shadow-sm">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-slate-200">
           <div className="flex items-center gap-3">
             <ArrowRight size={32} className="text-blue-300" />
             <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-1">Target Exit Window</div>
-              <div className="text-2xl font-semibold">Q2 2026 · Strategic M&A Process Launch</div>
+              <div className="text-xs uppercase tracking-[0.35em] text-slate-400 mb-1">Target Exit Window</div>
+              <div className="text-2xl font-semibold text-white">Q2 2026 · Strategic M&A Process Launch</div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-4 text-center text-xs uppercase tracking-[0.25em] text-slate-300">
+          <div className="grid grid-cols-3 gap-4 text-center text-xs uppercase tracking-[0.35em] text-slate-400">
             <div>
               <div className="text-2xl font-light text-white mb-1">24</div>
               <div>Months</div>

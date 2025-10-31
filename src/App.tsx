@@ -76,14 +76,15 @@ const RIAOnChainPitch = () => {
   }, [totalSlides]);
 
   return (
-    <div className="w-full h-screen bg-white flex flex-col">
+    <div className="w-full h-screen bg-slate-950 flex flex-col">
 
-      <div id="slide-capture" className="flex-1 relative bg-white overflow-hidden">
+      <div id="slide-capture" className="flex-1 relative bg-slate-950 overflow-hidden">
         {isContentSlide(currentSlideData) && (
-          <div className="absolute top-0 left-0 right-0 bg-slate-900 text-white px-4 sm:px-5 md:px-6 lg:px-8 py-3 md:py-4 lg:py-5">
+          <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white/90 px-4 sm:px-6 md:px-10 lg:px-12 py-4 md:py-5 border-b border-slate-800/60 backdrop-blur">
             <div className="flex flex-col sm:flex-row justify-between items-start gap-2 sm:gap-4">
               <div className="flex-1">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-light tracking-tight mb-1">
+                <div className="text-[11px] uppercase tracking-[0.35em] text-blue-400 mb-1">Prime RIA On-Chain</div>
+                <h2 className="text-lg sm:text-xl md:text-2xl font-light tracking-tight text-white mb-1">
                   {currentSlideData.title}
                 </h2>
                 {currentSlideData.subtitle && (
@@ -93,8 +94,8 @@ const RIAOnChainPitch = () => {
                 )}
               </div>
               <div className="text-left sm:text-right">
-                <div className="text-xs text-slate-400 uppercase tracking-widest">CONFIDENTIAL</div>
-                <div className="text-xs text-slate-500 mt-1">Slide {currentSlide + 1} of {totalSlides}</div>
+                <div className="text-xs text-slate-500 uppercase tracking-[0.35em]">Confidential</div>
+                <div className="text-xs text-slate-600 mt-1">Slide {currentSlide + 1} of {totalSlides}</div>
               </div>
             </div>
           </div>
@@ -109,7 +110,7 @@ const RIAOnChainPitch = () => {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className={
               isContentSlide(currentSlideData)
-                ? 'pt-20 sm:pt-22 md:pt-24 pb-12 sm:pb-14 px-4 sm:px-5 md:px-6 lg:px-8 h-full overflow-y-auto slide-content export-scroll'
+                ? 'pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-18 px-0 sm:px-2 md:px-6 lg:px-10 h-full overflow-y-auto slide-content export-scroll'
                 : 'h-full slide-content export-scroll'
             }
             style={{ transform: `scale(${zoom})`, transformOrigin: 'top center' }}
@@ -119,21 +120,21 @@ const RIAOnChainPitch = () => {
         </AnimatePresence>
 
         {isContentSlide(currentSlideData) && (
-          <div className="absolute bottom-0 left-0 right-0 bg-slate-50 border-t border-slate-200 px-4 sm:px-6 md:px-8 lg:px-12 py-2 sm:py-3 flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4">
-            <div className="text-xs text-slate-500 text-center sm:text-left">THE PRIME RIA ON-CHAIN | Confidential M&amp;A Analysis</div>
-            <div className="text-xs text-slate-500 text-center sm:text-right">Fintech Transformation Thesis | 10X Valuation Strategy</div>
+          <div className="absolute bottom-0 left-0 right-0 bg-slate-900/60 border-t border-slate-800 px-6 md:px-12 py-3 flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4 text-[11px] uppercase tracking-[0.35em] text-slate-500">
+            <div>Prime RIA On-Chain · Confidential</div>
+            <div>Tokenized PE | Fintech Transformation | 10X Target MOIC</div>
           </div>
         )}
       </div>
 
-      <div className="bg-slate-900 px-2 sm:px-4 md:px-8 py-2 sm:py-3 flex items-center justify-between border-t border-slate-700">
+      <div className="bg-slate-950 px-3 sm:px-6 md:px-10 py-3 flex items-center justify-between border-t border-slate-900">
         <button
           onClick={prevSlide}
           disabled={currentSlide === 0}
           className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 md:px-5 py-2 text-xs sm:text-sm font-light transition-all ${
             currentSlide === 0
               ? 'text-slate-600 cursor-not-allowed'
-              : 'text-white hover:text-blue-400'
+              : 'text-slate-200 hover:text-blue-400'
           }`}
         >
           <ChevronLeft size={16} className="sm:hidden" />
@@ -163,12 +164,12 @@ const RIAOnChainPitch = () => {
           <button
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 md:px-5 py-2 text-xs sm:text-sm font-light transition-all ${
-              currentSlide === slides.length - 1
-                ? 'text-slate-600 cursor-not-allowed'
-                : 'text-white hover:text-blue-400'
-            }`}
-          >
+          className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 md:px-5 py-2 text-xs sm:text-sm font-light tracking-wide transition-all ${
+            currentSlide === slides.length - 1
+              ? 'text-slate-600 cursor-not-allowed'
+              : 'text-slate-200 hover:text-blue-400'
+          }`}
+        >
             <span className="hidden sm:inline">Next</span>
             <ChevronRight size={16} className="sm:hidden" />
             <ChevronRight size={18} className="hidden sm:block" />
