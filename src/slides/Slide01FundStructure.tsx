@@ -9,36 +9,34 @@ export const Slide01FundStructure: ContentSlide = {
   subtitle: 'Tokenized Private Equity Vehicle — Operating Playbook & Capital Stack',
   content: (
     <div className="h-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 lg:p-12 bg-[#0b1424] text-slate-200">
-      <section className="rounded-2xl bg-gradient-to-r from-blue-900/90 via-indigo-800/80 to-slate-900/90 border border-slate-800 shadow-lg p-8 sm:p-10">
+      <section className="rounded-2xl bg-gradient-to-r from-blue-900/90 via-indigo-800/85 to-slate-900/90 border border-slate-800 shadow-lg p-8 sm:p-10">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <div>
             <div className="text-[11px] uppercase tracking-[0.35em] text-blue-200 mb-3">Plan Architecture</div>
-            <h2 className="text-2xl sm:text-3xl font-light text-white leading-tight">Tokenized Delaware LP → $5M Raise → $40M+ Deployment</h2>
+            <h2 className="text-2xl sm:text-3xl font-light text-white leading-tight">
+              $50K Formation → Tokenized Capital Rails → $1M Closing Payment → $4M Growth Deploy
+            </h2>
             <p className="text-sm sm:text-base text-slate-200/80 mt-4 max-w-2xl">
-              The Prime RIA On-Chain vehicle acquires undervalued RIAs, layers fintech infrastructure, and exits to
-              crypto-fintech buyers at premium multiples within 18-24 months.
+              Two tokenized sleeves launch in parallel: (i) Prime RIA On-Chain LP for the acquisition stack and
+              (ii) Lidya HFT token vault to recycle yield into the platform. Capital raised funds the $1M upfront
+              payment for Sector Analysts and future milestone tranches.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 text-center text-sm">
-            <div className="rounded-xl border border-blue-500/60 bg-blue-900/30 px-6 py-5">
+          <div className="grid grid-cols-3 gap-4 text-center text-sm">
+            <div className="rounded-xl border border-blue-500/60 bg-blue-900/25 px-6 py-5">
               <div className="text-[11px] uppercase tracking-[0.3em] text-blue-200 mb-2">Setup Capital</div>
               <div className="text-2xl font-semibold text-white">$50K</div>
-              <div className="text-xs text-blue-100 mt-1">Formation · Tokenization</div>
+              <div className="text-xs text-blue-100 mt-1">Formation · Tokenization Stack</div>
             </div>
-            <div className="rounded-xl border border-emerald-500/60 bg-emerald-900/30 px-6 py-5">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-emerald-200 mb-2">Target Raise</div>
-              <div className="text-2xl font-semibold text-white">$5M</div>
-              <div className="text-xs text-emerald-100 mt-1">Security Token Offering</div>
+            <div className="rounded-xl border border-emerald-500/60 bg-emerald-900/25 px-6 py-5">
+              <div className="text-[11px] uppercase tracking-[0.3em] text-emerald-200 mb-2">Initial Payment</div>
+              <div className="text-2xl font-semibold text-white">$1.0M</div>
+              <div className="text-xs text-emerald-100 mt-1">~16% of $6.25M enterprise value</div>
             </div>
-            <div className="rounded-xl border border-indigo-500/50 bg-indigo-900/30 px-6 py-5">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-indigo-200 mb-2">Fund Hold</div>
-              <div className="text-2xl font-semibold text-white">18-24m</div>
-              <div className="text-xs text-indigo-100 mt-1">Compressed Exit Window</div>
-            </div>
-            <div className="rounded-xl border border-purple-500/60 bg-purple-900/30 px-6 py-5">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-purple-200 mb-2">Target MOIC</div>
-              <div className="text-2xl font-semibold text-white">8-10x</div>
-              <div className="text-xs text-purple-100 mt-1">60-75% Net IRR</div>
+            <div className="rounded-xl border border-purple-500/60 bg-purple-900/25 px-6 py-5">
+              <div className="text-[11px] uppercase tracking-[0.3em] text-purple-200 mb-2">Earn-Out Reserve</div>
+              <div className="text-2xl font-semibold text-white">$5.25M</div>
+              <div className="text-xs text-purple-100 mt-1">Milestone tranches funded via tokenized closes + cash flow</div>
             </div>
           </div>
         </div>
@@ -72,7 +70,8 @@ export const Slide01FundStructure: ContentSlide = {
             <div className="text-[11px] uppercase tracking-[0.3em] text-emerald-300 mb-3">Phase 02 · Months 1-4</div>
             <h3 className="text-xl font-semibold text-white mb-2">$5M Tokenized Raise</h3>
             <p className="text-sm text-slate-300/80 mb-5">
-              Rolling monthly closes with automated LP servicing and distributions.
+              Rolling monthly closes supply $1M to fund the closing payment and $4M to underwrite milestone earn-outs,
+              Lidya tokenization, and product build.
             </p>
             <ul className="space-y-2 text-sm text-slate-200/90">
               <li>• $25K minimum · qualified purchasers, family offices</li>
@@ -80,6 +79,7 @@ export const Slide01FundStructure: ContentSlide = {
               <li>• Automated KYC/AML, cap table, investor portal</li>
               <li>• Monthly NAV, tokenized distributions, secondary prep</li>
               <li>• Anchor LPs: crypto HNW + institutional co-GP</li>
+              <li>• Structured to drip $1M closing + $5.25M earn-out reserve</li>
             </ul>
           </div>
           <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] font-semibold text-emerald-300 uppercase tracking-[0.25em]">

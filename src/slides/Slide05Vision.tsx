@@ -3,44 +3,44 @@ import type { ContentSlide } from '../types/slides';
 
 const milestoneRows = [
   {
-    tranche: 'T0 · 10%',
+    tranche: 'T0 · 16%',
     month: 'Close',
     trigger: 'Acquisition Signing',
-    payment: '$2.5M',
-    valuation: '$25M pre',
-    notes: 'Lock in founder rollover, integration readiness'
+    payment: '$1.0M',
+    valuation: '$6.25M implied (2.5× revenue)',
+    notes: 'Founder rollover locked | integration kickoff'
   },
   {
-    tranche: 'T1 · 15%',
+    tranche: 'T1 · 20%',
     month: 'Month 6',
-    trigger: '$4M Revenue | Dual Custody Live',
-    payment: '$3.75M',
-    valuation: '$40M',
-    notes: 'Digital asset sleeves 20% penetration'
+    trigger: '$3.6M Revenue · Dual Custody Live',
+    payment: '$1.25M',
+    valuation: '$7.5M',
+    notes: 'Digital asset sleeves reach 15% adoption'
   },
   {
-    tranche: 'T2 · 20%',
+    tranche: 'T2 · 24%',
     month: 'Month 12',
-    trigger: '$5M Revenue | 25% EBITDA | Tokenized LP',
-    payment: '$5.0M',
-    valuation: '$60M',
-    notes: 'First external RIA onboarded to platform'
+    trigger: '$4.5M Revenue · 24% EBITDA · Tokenized LP',
+    payment: '$1.50M',
+    valuation: '$9.0M',
+    notes: 'First external RIA onboarded; Lidya vault scaling'
   },
   {
-    tranche: 'T3 · 20%',
+    tranche: 'T3 · 24%',
     month: 'Month 18',
-    trigger: '$6.2M Revenue | 3 RIAs integrated',
-    payment: '$6.25M',
-    valuation: '$80M',
-    notes: 'Fintech metrics audited, banker engaged'
+    trigger: '$5.6M Revenue · 3 RIAs integrated',
+    payment: '$1.50M',
+    valuation: '$10.5M',
+    notes: 'Fintech metrics audited, banker mandate issued'
   },
   {
-    tranche: 'T4 · 35%',
+    tranche: 'T4 · 16%',
     month: 'Month 24',
-    trigger: '$7M Revenue | 28% EBITDA | Exit',
-    payment: '$8.5M',
-    valuation: '$100M+',
-    notes: 'Strategic sale (fintech multiple 10-12x)'
+    trigger: '$7.0M Revenue · 28% EBITDA · Exit Ready',
+    payment: '$1.0M',
+    valuation: '$12.0M',
+    notes: 'Triggers strategic exit (10-12× revenue)'
   }
 ];
 
@@ -128,9 +128,9 @@ export const Slide05Vision: ContentSlide = {
               <div className="text-xs text-emerald-200/80 mt-1">Probability-weighted (55% base)</div>
             </div>
             <div className="rounded-lg border border-slate-700 bg-[#141f36] p-4 col-span-2">
-              <div className="text-xs uppercase tracking-[0.35em] text-slate-400 mb-2">Exit Valuation</div>
-              <div className="text-lg font-semibold text-white">$100M – $120M</div>
-              <div className="text-xs text-slate-400 mt-1">10-12x revenue fintech comparable range</div>
+              <div className="text-xs uppercase tracking-[0.35em] text-slate-400 mb-2">Entry vs Exit</div>
+              <div className="text-lg font-semibold text-white">$6.25M Buy-In → $100M-$120M Exit</div>
+              <div className="text-xs text-slate-400 mt-1">2.5× revenue entry; 10-12× revenue fintech exit range</div>
             </div>
           </div>
         </article>
