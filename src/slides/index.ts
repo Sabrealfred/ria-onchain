@@ -1,6 +1,9 @@
 export { Slide00Cover } from './Slide00Cover';
-export { Slide01FundStructure } from './Slide01FundStructure';
-export { Slide01CurrentState as Slide02CurrentState } from './Slide01CurrentState';
-export { Slide02TheFix as Slide03TheFix } from './Slide02TheFix';
-export { Slide03Actions as Slide04Actions } from './Slide03Actions';
-export { Slide05Vision } from './Slide05Vision';
+export { Slide01ExecutiveSummary } from './Slide01ExecutiveSummary';
+export { Slide02VisionThesis } from './Slide02VisionThesis';
+export { Slide03CurrentState } from './Slide03CurrentState';
+export { Slide04Transformation } from './Slide04Transformation';
+export { Slide05InitialCapital } from './Slide05InitialCapital';
+export { Slide06CaseStudy } from './Slide06CaseStudy';
+export { Slide07Roadmap } from './Slide07Roadmap';
+export { Slide08ExitStrategy } from './Slide08ExitStrategy';

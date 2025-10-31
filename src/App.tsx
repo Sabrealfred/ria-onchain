@@ -3,11 +3,14 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
   Slide00Cover,
-  Slide01FundStructure,
-  Slide02CurrentState,
-  Slide03TheFix,
-  Slide04Actions,
-  Slide05Vision
+  Slide01ExecutiveSummary,
+  Slide02VisionThesis,
+  Slide03CurrentState,
+  Slide04Transformation,
+  Slide05InitialCapital,
+  Slide06CaseStudy,
+  Slide07Roadmap,
+  Slide08ExitStrategy
 } from './slides';
 import type { ContentSlide, SlideDefinition } from './types/slides';
 
@@ -17,11 +20,14 @@ const RIAOnChainPitch = () => {
 
   const slides = [
     Slide00Cover,
-    Slide01FundStructure,
-    Slide02CurrentState,
-    Slide03TheFix,
-    Slide04Actions,
-    Slide05Vision
+    Slide01ExecutiveSummary,
+    Slide02VisionThesis,
+    Slide03CurrentState,
+    Slide04Transformation,
+    Slide05InitialCapital,
+    Slide06CaseStudy,
+    Slide07Roadmap,
+    Slide08ExitStrategy
   ] satisfies SlideDefinition[];
 
   const nextSlide = () => {
