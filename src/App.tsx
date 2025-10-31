@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
-  Slide01CurrentState,
-  Slide02TheFix,
-  Slide03Actions,
-  Slide04Results,
+  Slide00Cover,
+  Slide01FundStructure,
+  Slide02CurrentState,
+  Slide03TheFix,
+  Slide04Actions,
   Slide05Vision
 } from './slides';
 import type { ContentSlide, SlideDefinition } from './types/slides';
@@ -15,10 +16,11 @@ const RIAOnChainPitch = () => {
   const zoom = 1;
 
   const slides = [
-    Slide01CurrentState,
-    Slide02TheFix,
-    Slide03Actions,
-    Slide04Results,
+    Slide00Cover,
+    Slide01FundStructure,
+    Slide02CurrentState,
+    Slide03TheFix,
+    Slide04Actions,
     Slide05Vision
   ] satisfies SlideDefinition[];
 

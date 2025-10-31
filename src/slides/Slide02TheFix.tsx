@@ -1,103 +1,119 @@
-import { Zap, Network, DollarSign } from 'lucide-react';
+import { Zap, TrendingUp, Coins, Shield } from 'lucide-react';
 import type { ContentSlide } from '../types/slides';
 
 export const Slide02TheFix: ContentSlide = {
   type: 'content',
-  title: 'II. THE FIX',
-  subtitle: 'Fintech Transformation Blueprint — From traditional RIA → On-chain prime services platform',
+  title: 'III. THE TRANSFORMATION',
+  subtitle: 'On-Chain Integration — 12 Growth Opportunities to 10X Valuation',
   content: (
-    <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 lg:p-12 pt-24 md:pt-28 lg:pt-32">
-      {/* Transformation Framework */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 mb-6 lg:mb-8">
-        <div className="border border-green-200 bg-green-50">
-          <div className="bg-green-600 text-white p-3 sm:p-4">
-            <Zap className="mb-2" size={20} />
-            <h3 className="text-xs font-semibold uppercase tracking-wide">Technology Layer</h3>
+    <div className="h-full flex flex-col p-8 pt-32">
+      <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-6 rounded-lg">
+          <div className="flex items-center gap-3 mb-4">
+            <Coins size={32} />
+            <h3 className="text-xl font-bold">Tokenization Layer</h3>
           </div>
-          <div className="p-4 sm:p-5 space-y-3 text-xs sm:text-sm text-slate-700">
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">FPGA Execution Engine</div>
-              <div className="text-xs text-slate-600">Sub-120ns latency HFT infrastructure for algorithmic strategies and market making</div>
+          <div className="space-y-2 text-sm">
+            <div className="flex items-start gap-2">
+              <div className="text-blue-200">1.</div>
+              <div>Tokenized LP Fund Shares (ERC-3643)</div>
             </div>
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">On-Chain Integration</div>
-              <div className="text-xs text-slate-600">MPC wallets, DEX connectivity, bridge infrastructure for cross-chain operations</div>
+            <div className="flex items-start gap-2">
+              <div className="text-blue-200">2.</div>
+              <div>RWA Fund Integration (Plume.org)</div>
             </div>
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">Automated PMS</div>
-              <div className="text-xs text-slate-600">Portfolio management system with real-time NAV, risk analytics, and compliance monitoring</div>
+            <div className="flex items-start gap-2">
+              <div className="text-blue-200">3.</div>
+              <div>Smart Contract Distribution System</div>
             </div>
-          </div>
-        </div>
-
-        <div className="border border-blue-200 bg-blue-50">
-          <div className="bg-blue-600 text-white p-3 sm:p-4">
-            <Network className="mb-2" size={20} />
-            <h3 className="text-xs font-semibold uppercase tracking-wide">Asset Expansion</h3>
-          </div>
-          <div className="p-4 sm:p-5 space-y-3 text-xs sm:text-sm text-slate-700">
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">Digital Asset Custody</div>
-              <div className="text-xs text-slate-600">Institutional-grade crypto custody with insurance and segregation</div>
-            </div>
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">Tokenized Securities</div>
-              <div className="text-xs text-slate-600">RWA exposure: treasuries, credit, real estate on-chain</div>
-            </div>
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">DeFi Integration</div>
-              <div className="text-xs text-slate-600">Yield strategies, liquidity provision, staking, and governance participation</div>
+            <div className="flex items-start gap-2">
+              <div className="text-blue-200">4.</div>
+              <div>Automated Compliance & KYC/AML</div>
             </div>
           </div>
         </div>
 
-        <div className="border border-purple-200 bg-purple-50">
-          <div className="bg-purple-600 text-white p-3 sm:p-4">
-            <DollarSign className="mb-2" size={20} />
-            <h3 className="text-xs font-semibold uppercase tracking-wide">Revenue Diversification</h3>
+        <div className="bg-gradient-to-br from-green-600 to-green-700 text-white p-6 rounded-lg">
+          <div className="flex items-center gap-3 mb-4">
+            <TrendingUp size={32} />
+            <h3 className="text-xl font-bold">Crypto Advisory</h3>
           </div>
-          <div className="p-4 sm:p-5 space-y-3 text-xs sm:text-sm text-slate-700">
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">Performance Fees</div>
-              <div className="text-xs text-slate-600">20% carry on HFT and alpha strategies (2+20 structure)</div>
+          <div className="space-y-2 text-sm">
+            <div className="flex items-start gap-2">
+              <div className="text-green-200">5.</div>
+              <div>BTC/ETH Portfolio Allocations (5-15%)</div>
             </div>
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">SaaS Platform Fees</div>
-              <div className="text-xs text-slate-600">White-label PMS licensing to other RIAs and family offices</div>
+            <div className="flex items-start gap-2">
+              <div className="text-green-200">6.</div>
+              <div>Crypto Tax Optimization Services</div>
             </div>
-            <div>
-              <div className="font-semibold text-slate-900 mb-1">Transaction Revenue</div>
-              <div className="text-xs text-slate-600">Spread capture on custody, OTC execution, and liquidity services</div>
+            <div className="flex items-start gap-2">
+              <div className="text-green-200">7.</div>
+              <div>DeFi Yield Strategy Integration</div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="text-green-200">8.</div>
+              <div>Staking & Validator Services</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-br from-purple-600 to-purple-700 text-white p-6 rounded-lg">
+          <div className="flex items-center gap-3 mb-4">
+            <Zap size={32} />
+            <h3 className="text-xl font-bold">Platform Tech</h3>
+          </div>
+          <div className="space-y-2 text-sm">
+            <div className="flex items-start gap-2">
+              <div className="text-purple-200">9.</div>
+              <div>AI-Powered Client Portal</div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="text-purple-200">10.</div>
+              <div>Real-Time On-Chain Analytics</div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="text-purple-200">11.</div>
+              <div>Cross-Chain Asset Aggregation</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-br from-orange-600 to-orange-700 text-white p-6 rounded-lg">
+          <div className="flex items-center gap-3 mb-4">
+            <Shield size={32} />
+            <h3 className="text-xl font-bold">Compliance Edge</h3>
+          </div>
+          <div className="space-y-2 text-sm">
+            <div className="flex items-start gap-2">
+              <div className="text-orange-200">12.</div>
+              <div>SEC-Compliant Digital Asset Custody</div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="text-orange-200">•</div>
+              <div>Regulatory-First Architecture</div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="text-orange-200">•</div>
+              <div>Institutional-Grade Security</div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Value Creation Mechanics */}
-      <div className="bg-slate-900 text-white p-6 sm:p-8 rounded-lg flex-1 flex items-center">
-        <div className="w-full">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-300 mb-6">Value Creation Mechanics</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            <div className="border-l-2 border-green-500 pl-4">
-              <div className="text-xl sm:text-2xl font-light mb-1">3-5x</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wide">Revenue Multiple Expansion</div>
-              <div className="text-xs text-slate-500 mt-2">From traditional RIA (1.0-1.5x) to fintech platform (3-5x)</div>
-            </div>
-            <div className="border-l-2 border-blue-500 pl-4">
-              <div className="text-xl sm:text-2xl font-light mb-1">5x</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wide">Revenue Growth</div>
-              <div className="text-xs text-slate-500 mt-2">Performance fees + SaaS + transaction revenue streams</div>
-            </div>
-            <div className="border-l-2 border-purple-500 pl-4">
-              <div className="text-xl sm:text-2xl font-light mb-1">10x</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wide">Total Valuation Uplift</div>
-              <div className="text-xs text-slate-500 mt-2">Combined multiple expansion + revenue growth</div>
-            </div>
-            <div className="border-l-2 border-orange-500 pl-4">
-              <div className="text-xl sm:text-2xl font-light mb-1">70%+</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wide">Gross Margin Profile</div>
-              <div className="text-xs text-slate-500 mt-2">Software-enabled operations with automated workflows</div>
-            </div>
+      <div className="bg-slate-900 text-white p-6 rounded-lg">
+        <div className="grid grid-cols-3 gap-8 text-center">
+          <div>
+            <div className="text-3xl font-bold mb-2 text-green-400">$2.5M → $5M</div>
+            <div className="text-sm text-slate-400">Revenue Growth Target</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold mb-2 text-blue-400">$2.2M</div>
+            <div className="text-sm text-slate-400">Tech Investment</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold mb-2 text-purple-400">36 months</div>
+            <div className="text-sm text-slate-400">Transformation Timeline</div>
           </div>
         </div>
       </div>
