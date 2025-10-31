@@ -142,6 +142,12 @@ export const Slide08ExitStrategy: ContentSlide = {
           </div>
         </div>
       </section>
+
+      <section className="rounded-2xl border border-slate-700/50 bg-slate-900/30 p-5">
+        <div className="text-xs text-slate-400 leading-relaxed">
+          <span className="font-semibold text-slate-300">Note:</span> Milestone-based earn-out structure and valuation multiples are based on industry-standard M&A practices for fintech and digital asset platforms, including comparable transactions in the wealth management and tokenization sectors. Strategic buyer landscape reflects active acquirers of regulated financial services businesses with technology integration.
+        </div>
+      </section>
     </div>
   )
 };

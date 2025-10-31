@@ -2,7 +2,7 @@ import type { ContentSlide } from '../types/slides';
 
 export const Slide05InitialCapital: ContentSlide = {
   type: 'content',
-  title: 'V. INITIAL CAPITAL — $50K SETUP & PROJECT STRUCTURE',
+  title: 'V. INITIAL CAPITAL — PURPOSE & PROJECT STRUCTURE',
   subtitle: 'Foundation spend that unlocks the acquisition stack and tokenized financing',
   content: (
     <div className="h-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 lg:p-12 bg-[#0b1424] text-slate-200">
@@ -10,10 +10,10 @@ export const Slide05InitialCapital: ContentSlide = {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <div className="space-y-4 max-w-2xl">
             <h3 className="text-lg font-semibold text-white uppercase tracking-[0.08em]">
-              $50,000 Seed Capital — Purpose
+              Purpose
             </h3>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              Not operating spend. The $50K establishes the legal, technological, and compliance rails required to
+              Not operating spend. The initial capital establishes the legal, technological, and compliance rails required to
               mobilize the $1M initial payment and the subsequent earn-out tranches safely through tokenized
               vehicles.
             </p>

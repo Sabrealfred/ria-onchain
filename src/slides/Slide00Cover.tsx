@@ -38,10 +38,6 @@ export const Slide00Cover: SlideDefinition = {
             platform in the United States.
           </p>
           <p>
-            Initial Capital Required: <span className="text-amber-200 font-semibold">$50,000 USD</span> to launch the
-            legal, compliance, and tokenization stack that powers the transaction.
-          </p>
-          <p>
             Acquisition Price ≈ <span className="text-sky-200">$3M (1.2× revenue)</span> · Initial Payment
             <span className="text-slate-200"> $1M</span> · Tokenized SPV + DeFi Yield Vault · Projected Exit
             <span className="text-emerald-200"> $100–120M</span> within 24 months.
