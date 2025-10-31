@@ -1,78 +1,99 @@
 import type { ContentSlide } from '../types/slides';
 
+const phaseCardClasses =
+  'relative rounded-xl bg-white shadow-sm border border-slate-200 p-6 flex flex-col justify-between';
+
 export const Slide01FundStructure: ContentSlide = {
   type: 'content',
   title: 'I. FUND STRUCTURE',
-  subtitle: 'Three-Phase Tokenized PE Model — Formation → Raise → Deploy',
+  subtitle: 'Tokenized Private Equity Vehicle — Operating Playbook & Capital Stack',
   content: (
-    <div className="h-full flex flex-col p-8 pt-32">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 flex-1">
-        <div className="border-2 border-blue-500 bg-blue-50 p-6">
-          <div className="bg-blue-600 text-white p-4 -m-6 mb-6">
-            <div className="text-2xl font-light mb-2">Phase 01</div>
-            <div className="text-4xl font-bold">$50K</div>
-            <div className="text-sm mt-2">Formation Sprint</div>
+    <div className="h-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 lg:p-12 pt-28 bg-slate-100">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className={`${phaseCardClasses}`}>
+          <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-blue-300 rounded-t-xl" />
+          <div>
+            <div className="text-slate-500 text-xs uppercase tracking-[0.25em] mb-3">Phase 01</div>
+            <h3 className="text-2xl font-semibold text-slate-900 mb-1">$50,000 Formation Sprint</h3>
+            <p className="text-sm text-slate-600 mb-5">
+              Institutional wrapper launched in 30 days with tokenization rails live day one.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-700">
+              <li>• Delaware LP & GP management entity</li>
+              <li>• LPA, PPM, subscription docs, operating handbook</li>
+              <li>• SEC/FINRA counsel, written supervisory procedures</li>
+              <li>• Plume.org integration — ERC-3643 smart contracts</li>
+              <li>• Banking, custody, payments, investor data room</li>
+            </ul>
           </div>
-          <div className="space-y-3 text-sm">
-            <div><strong>Delaware LP setup</strong></div>
-            <div>• Legal Stack (LPA, PPM, Sub Docs)</div>
-            <div>• SEC/FINRA compliance</div>
-            <div>• Plume.org tokenization (ERC-3643)</div>
-            <div>• Banking & custody</div>
-            <div>• Investor materials</div>
-            <div className="pt-4 border-t mt-4 font-semibold text-blue-900">Timeline: Weeks 0-4</div>
-          </div>
-        </div>
-
-        <div className="border-2 border-green-500 bg-green-50 p-6">
-          <div className="bg-green-600 text-white p-4 -m-6 mb-6">
-            <div className="text-2xl font-light mb-2">Phase 02</div>
-            <div className="text-4xl font-bold">$5M</div>
-            <div className="text-sm mt-2">Tokenized Raise</div>
-          </div>
-          <div className="space-y-3 text-sm">
-            <div><strong>Security Token Offering</strong></div>
-            <div>• Monthly rolling closes</div>
-            <div>• $25K minimum investment</div>
-            <div>• ERC-3643 LP tokens</div>
-            <div>• Automated distribution</div>
-            <div>• KYC/AML compliant</div>
-            <div className="pt-4 border-t mt-4 font-semibold text-green-900">Timeline: Months 1-4</div>
+          <div className="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-blue-600 uppercase tracking-wide">
+            Timeline · Weeks 0-4
           </div>
         </div>
 
-        <div className="border-2 border-purple-500 bg-purple-50 p-6">
-          <div className="bg-purple-600 text-white p-4 -m-6 mb-6">
-            <div className="text-2xl font-light mb-2">Phase 03</div>
-            <div className="text-4xl font-bold">$40M+</div>
-            <div className="text-sm mt-2">Deploy & Exit</div>
+        <div className={`${phaseCardClasses}`}>
+          <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500 to-emerald-300 rounded-t-xl" />
+          <div>
+            <div className="text-slate-500 text-xs uppercase tracking-[0.25em] mb-3">Phase 02</div>
+            <h3 className="text-2xl font-semibold text-slate-900 mb-1">$5M Tokenized Raise</h3>
+            <p className="text-sm text-slate-600 mb-5">
+              Security token offering with rolling monthly closes and automated distributions.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-700">
+              <li>• $25K minimum, qualified purchasers + family offices</li>
+              <li>• ERC-3643 LP tokens with transfer restrictions codified</li>
+              <li>• Automated KYC/AML, cap table, secondary readiness</li>
+              <li>• Monthly NAV reporting, digital subscription workflow</li>
+              <li>• Anchor LPs: crypto-native HNW + institutional co-GP</li>
+            </ul>
           </div>
-          <div className="space-y-3 text-sm">
-            <div><strong>Acquisition & Transformation</strong></div>
-            <div>• Acquire 3-5 RIAs ($2-3M each)</div>
-            <div>• Crypto/DeFi integration</div>
-            <div>• Tokenization infrastructure</div>
-            <div>• Scale to fintech multiples</div>
-            <div>• Exit at 10X (M&A milestones)</div>
-            <div className="pt-4 border-t mt-4 font-semibold text-purple-900">Timeline: Months 4-20</div>
+          <div className="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-emerald-600 uppercase tracking-wide">
+            Timeline · Months 1-4
+          </div>
+        </div>
+
+        <div className={`${phaseCardClasses}`}>
+          <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-t-xl" />
+          <div>
+            <div className="text-slate-500 text-xs uppercase tracking-[0.25em] mb-3">Phase 03</div>
+            <h3 className="text-2xl font-semibold text-slate-900 mb-1">$40M+ Deployment & Exits</h3>
+            <p className="text-sm text-slate-600 mb-5">
+              Acquire, transform, and exit 3-5 RIAs at fintech valuations within 18-20 months.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-700">
+              <li>• $2-3M entry per RIA | 8-12x EBITDA fintech exit target</li>
+              <li>• Playbook: crypto stack, tokenization, automation layer</li>
+              <li>• Portfolio ops: shared tech spine, compliance, treasury</li>
+              <li>• Milestone-based earn-outs to align founder incentives</li>
+              <li>• Exit committee: strategics (Coinbase/Fidelity) + PE</li>
+            </ul>
+          </div>
+          <div className="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-indigo-600 uppercase tracking-wide">
+            Timeline · Months 4-20
           </div>
         </div>
       </div>
 
-      <div className="mt-8 bg-slate-900 text-white p-6 rounded-lg">
-        <div className="grid grid-cols-3 gap-8 text-center">
-          <div>
-            <div className="text-3xl font-light mb-2">$45M+</div>
-            <div className="text-sm text-slate-400">Total Fund Size</div>
-          </div>
-          <div>
-            <div className="text-3xl font-light mb-2">15-20mo</div>
-            <div className="text-sm text-slate-400">Hold Period</div>
-          </div>
-          <div>
-            <div className="text-3xl font-light mb-2">10X</div>
-            <div className="text-sm text-slate-400">Target MOIC</div>
-          </div>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 bg-white/80 border border-slate-200 rounded-xl p-6">
+        <div>
+          <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Fund Geometry</div>
+          <div className="text-3xl font-light text-slate-900">$45M core</div>
+          <div className="text-sm text-slate-600">Plus credit line for opportunistic bolt-ons</div>
+        </div>
+        <div className="border-l border-slate-200 pl-6">
+          <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Hold Period</div>
+          <div className="text-3xl font-light text-slate-900">18-24 months</div>
+          <div className="text-sm text-slate-600">Per asset — milestone-linked exits</div>
+        </div>
+        <div className="border-l border-slate-200 pl-6">
+          <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Target MOIC</div>
+          <div className="text-3xl font-light text-slate-900">10.0x</div>
+          <div className="text-sm text-slate-600">Base case — upside to 12.5x</div>
+        </div>
+        <div className="border-l border-slate-200 pl-6">
+          <div className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">Distribution Waterfall</div>
+          <div className="text-3xl font-light text-slate-900">Preferred 8%</div>
+          <div className="text-sm text-slate-600">Carry 20% &gt;8% | 30% &gt;12%</div>
         </div>
       </div>
     </div>

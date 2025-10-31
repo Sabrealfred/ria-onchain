@@ -1,122 +1,137 @@
-import { Zap, TrendingUp, Coins, Shield } from 'lucide-react';
+import { TrendingUp, Coins, Shield, Workflow } from 'lucide-react';
 import type { ContentSlide } from '../types/slides';
 
 export const Slide02TheFix: ContentSlide = {
   type: 'content',
   title: 'III. THE TRANSFORMATION',
-  subtitle: 'On-Chain Integration — 12 Growth Opportunities to 10X Valuation',
+  subtitle: 'Twelve High-Conviction Levers — From Legacy RIA to Prime On-Chain Platform',
   content: (
-    <div className="h-full flex flex-col p-8 pt-32">
-      <div className="grid grid-cols-2 gap-6 mb-6">
-        <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-6 rounded-lg">
-          <div className="flex items-center gap-3 mb-4">
-            <Coins size={32} />
-            <h3 className="text-xl font-bold">Tokenization Layer</h3>
-          </div>
-          <div className="space-y-2 text-sm">
-            <div className="flex items-start gap-2">
-              <div className="text-blue-200">1.</div>
-              <div>Tokenized LP Fund Shares (ERC-3643)</div>
+    <div className="h-full flex flex-col gap-8 p-6 sm:p-8 md:p-10 lg:p-12 pt-28 bg-slate-100">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <article className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="rounded-lg bg-blue-900 text-white p-3">
+              <Coins size={28} />
             </div>
-            <div className="flex items-start gap-2">
-              <div className="text-blue-200">2.</div>
-              <div>RWA Fund Integration (Plume.org)</div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="text-blue-200">3.</div>
-              <div>Smart Contract Distribution System</div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="text-blue-200">4.</div>
-              <div>Automated Compliance & KYC/AML</div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">Tokenization & Capital Stack</h3>
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Catalyst · Weeks 0-8</p>
             </div>
           </div>
-        </div>
+          <ul className="space-y-3 text-sm text-slate-700">
+            <li>
+              <span className="font-semibold text-slate-900">1. ERC-3643 Issuance</span> — LP tokens with embedded compliance, secondary-ready.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">2. RWA Vault</span> — Plume.org integration for tokenized Treasuries & credit notes.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">3. Automated Waterfall</span> — Smart-contract distributions, LP portal, cap table.
+            </li>
+          </ul>
+          <div className="mt-5 rounded-lg bg-blue-50 border border-blue-100 p-4 text-xs text-blue-900">
+            Outcome: Fund moves from static partnership docs to programmable capital market infrastructure.
+          </div>
+        </article>
 
-        <div className="bg-gradient-to-br from-green-600 to-green-700 text-white p-6 rounded-lg">
-          <div className="flex items-center gap-3 mb-4">
-            <TrendingUp size={32} />
-            <h3 className="text-xl font-bold">Crypto Advisory</h3>
-          </div>
-          <div className="space-y-2 text-sm">
-            <div className="flex items-start gap-2">
-              <div className="text-green-200">5.</div>
-              <div>BTC/ETH Portfolio Allocations (5-15%)</div>
+        <article className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="rounded-lg bg-emerald-900 text-white p-3">
+              <TrendingUp size={28} />
             </div>
-            <div className="flex items-start gap-2">
-              <div className="text-green-200">6.</div>
-              <div>Crypto Tax Optimization Services</div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="text-green-200">7.</div>
-              <div>DeFi Yield Strategy Integration</div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="text-green-200">8.</div>
-              <div>Staking & Validator Services</div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">Crypto & Yield Advisory Stack</h3>
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Revenue Lift · Months 3-12</p>
             </div>
           </div>
-        </div>
+          <ul className="space-y-3 text-sm text-slate-700">
+            <li>
+              <span className="font-semibold text-slate-900">4. BTC/ETH Core Sleeve</span> — 5-15% advisory allocation, SMA + custody ready.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">5. DeFi Yield Marketplace</span> — Curated stablecoin, staking, restaking products.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">6. Tax Alpha Engine</span> — Automated gain harvesting, crypto wash sale compliance.
+            </li>
+          </ul>
+          <div className="mt-5 rounded-lg bg-emerald-50 border border-emerald-100 p-4 text-xs text-emerald-900">
+            Outcome: Elevate advisory fees from 100 bps to 140-160 bps with differentiated product.
+          </div>
+        </article>
 
-        <div className="bg-gradient-to-br from-purple-600 to-purple-700 text-white p-6 rounded-lg">
-          <div className="flex items-center gap-3 mb-4">
-            <Zap size={32} />
-            <h3 className="text-xl font-bold">Platform Tech</h3>
-          </div>
-          <div className="space-y-2 text-sm">
-            <div className="flex items-start gap-2">
-              <div className="text-purple-200">9.</div>
-              <div>AI-Powered Client Portal</div>
+        <article className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="rounded-lg bg-indigo-900 text-white p-3">
+              <Workflow size={28} />
             </div>
-            <div className="flex items-start gap-2">
-              <div className="text-purple-200">10.</div>
-              <div>Real-Time On-Chain Analytics</div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="text-purple-200">11.</div>
-              <div>Cross-Chain Asset Aggregation</div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">Operating System & Automation</h3>
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Margin Expansion · Months 6-18</p>
             </div>
           </div>
-        </div>
+          <ul className="space-y-3 text-sm text-slate-700">
+            <li>
+              <span className="font-semibold text-slate-900">7. Unified Data Spine</span> — Real-time AUM analytics, API aggregation, AI reporting.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">8. Advisor Workbench</span> — Automated onboarding, billing, compliance workflows.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">9. Client Portal 2.0</span> — On-chain + TradFi positions, scenario planning, messaging.
+            </li>
+          </ul>
+          <div className="mt-5 rounded-lg bg-indigo-50 border border-indigo-100 p-4 text-xs text-indigo-900">
+            Outcome: Reduce SG&A from 32% to sub-20%, enabling platform-level scalability.
+          </div>
+        </article>
 
-        <div className="bg-gradient-to-br from-orange-600 to-orange-700 text-white p-6 rounded-lg">
-          <div className="flex items-center gap-3 mb-4">
-            <Shield size={32} />
-            <h3 className="text-xl font-bold">Compliance Edge</h3>
-          </div>
-          <div className="space-y-2 text-sm">
-            <div className="flex items-start gap-2">
-              <div className="text-orange-200">12.</div>
-              <div>SEC-Compliant Digital Asset Custody</div>
+        <article className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="rounded-lg bg-amber-900 text-white p-3">
+              <Shield size={28} />
             </div>
-            <div className="flex items-start gap-2">
-              <div className="text-orange-200">•</div>
-              <div>Regulatory-First Architecture</div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="text-orange-200">•</div>
-              <div>Institutional-Grade Security</div>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-900">Regulatory & Risk Architecture</h3>
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Defense · Always-On</p>
             </div>
           </div>
-        </div>
-      </div>
+          <ul className="space-y-3 text-sm text-slate-700">
+            <li>
+              <span className="font-semibold text-slate-900">10. Dual Custody</span> — Anchorage + BNY Mellon for resilience and product breadth.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">11. Compliance Automation</span> — Surveillance, trade review, token eligibility.
+            </li>
+            <li>
+              <span className="font-semibold text-slate-900">12. Risk & Insurance Stack</span> — SOC 2 readiness, crime/D&O, smart contract coverage.
+            </li>
+          </ul>
+          <div className="mt-5 rounded-lg bg-amber-50 border border-amber-100 p-4 text-xs text-amber-900">
+            Outcome: SEC-ready framework that de-risks exits to public fintech platforms.
+          </div>
+        </article>
+      </section>
 
-      <div className="bg-slate-900 text-white p-6 rounded-lg">
-        <div className="grid grid-cols-3 gap-8 text-center">
+      <section className="rounded-xl border border-slate-200 bg-slate-900 text-white p-6 shadow-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           <div>
-            <div className="text-3xl font-bold mb-2 text-green-400">$2.5M → $5M</div>
-            <div className="text-sm text-slate-400">Revenue Growth Target</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Revenue Expansion</div>
+            <div className="text-3xl font-light">$2.5M → $5.6M</div>
+            <div className="text-xs text-slate-400 mt-2">+205 bps blended fee yield by Month 24</div>
           </div>
           <div>
-            <div className="text-3xl font-bold mb-2 text-blue-400">$2.2M</div>
-            <div className="text-sm text-slate-400">Tech Investment</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Investment</div>
+            <div className="text-3xl font-light">$2.225M</div>
+            <div className="text-xs text-slate-400 mt-2">Phased capex aligned to roadmap</div>
           </div>
           <div>
-            <div className="text-3xl font-bold mb-2 text-purple-400">36 months</div>
-            <div className="text-sm text-slate-400">Transformation Timeline</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-2">Valuation Re-Rate</div>
+            <div className="text-3xl font-light">1.2x → 9.5x</div>
+            <div className="text-xs text-slate-400 mt-2">Fintech comparables (Anchorage, Eaglebrook)</div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 };

@@ -3,65 +3,73 @@ import type { SlideDefinition } from '../types/slides';
 export const Slide00Cover: SlideDefinition = {
   type: 'title',
   content: (
-    <div className="h-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white p-8 sm:p-12 md:p-16 flex flex-col justify-between">
-      {/* Header */}
-      <div className="flex justify-between items-start">
-        <div>
-          <div className="text-xs uppercase tracking-widest text-slate-400">CONFIDENTIAL OFFERING MEMORANDUM</div>
-          <div className="text-[10px] text-slate-500 mt-1">For Accredited Investors Only</div>
-        </div>
-        <div className="text-right">
-          <div className="text-xs text-slate-400">Q4 2025</div>
-          <div className="text-[10px] text-slate-500 mt-1">Delaware Limited Partnership</div>
-        </div>
+    <div className="h-full bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)`
+        }}></div>
       </div>
 
-      {/* Main Title */}
-      <div className="flex-1 flex flex-col justify-center items-center text-center px-4">
-        <div className="mb-8">
-          <div className="text-xs sm:text-sm uppercase tracking-[0.3em] text-blue-400 font-semibold mb-6">
-            Tokenized Private Equity Fund
+      <div className="relative h-full flex flex-col justify-between p-12 lg:p-16">
+        {/* Header */}
+        <div className="flex justify-between items-start">
+          <div>
+            <div className="text-blue-400 text-sm font-light tracking-[0.3em] mb-2">CONFIDENTIAL M&A ANALYSIS</div>
+            <div className="text-xs text-slate-500 uppercase tracking-widest">Private Equity | Fintech Transformation</div>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light mb-6 tracking-tight leading-tight">
-            THE PRIME RIA<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
-              ON-CHAIN
-            </span>
-          </h1>
-          <div className="h-1 w-32 sm:w-48 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-          <p className="text-lg sm:text-xl md:text-2xl font-light text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Acquiring & Transforming Traditional RIAs<br className="hidden sm:block"/>
-            Into On-Chain Fintech Platforms
-          </p>
-        </div>
-
-        {/* Key Metrics Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl w-full mt-12">
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
-            <div className="text-3xl sm:text-4xl font-light text-green-400 mb-2">$50M+</div>
-            <div className="text-xs sm:text-sm text-slate-400 uppercase tracking-wide">Fund Size Target</div>
-          </div>
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
-            <div className="text-3xl sm:text-4xl font-light text-blue-400 mb-2">3-5</div>
-            <div className="text-xs sm:text-sm text-slate-400 uppercase tracking-wide">RIA Acquisitions</div>
-          </div>
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
-            <div className="text-3xl sm:text-4xl font-light text-purple-400 mb-2">10X</div>
-            <div className="text-xs sm:text-sm text-slate-400 uppercase tracking-wide">Target Exit Multiple</div>
+          <div className="text-right">
+            <div className="text-xs text-slate-500 uppercase tracking-widest">Q1 2025</div>
+            <div className="text-xs text-slate-600 mt-1">Investment Opportunity</div>
           </div>
         </div>
-      </div>
 
-      {/* Footer */}
-      <div className="border-t border-slate-700 pt-6 mt-8">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="text-center sm:text-left">
-            <div className="text-sm font-light">Mira Labs Capital Formation</div>
-            <div className="text-xs text-slate-400 mt-1">New York • Luzern • Luxembourg • Singapore</div>
+        {/* Main Title */}
+        <div className="flex-1 flex flex-col justify-center -mt-16">
+          <div className="mb-8">
+            <div className="text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-none mb-6">
+              THE PRIME<br/>
+              <span className="font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                RIA ON-CHAIN
+              </span>
+            </div>
+            <div className="h-1 w-32 bg-gradient-to-r from-blue-500 to-transparent mb-8"></div>
+            <div className="text-xl lg:text-2xl font-light text-slate-300 max-w-3xl leading-relaxed">
+              Tokenized Private Equity Fund: Acquiring Traditional RIAs &<br/>
+              Transforming Them Into Institutional-Grade On-Chain Fintech Platforms
+            </div>
           </div>
-          <div className="text-center sm:text-right">
-            <div className="text-xs text-slate-400 uppercase tracking-widest">Investment Structure</div>
-            <div className="text-sm font-light mt-1">Tokenized LP Interests (ERC-3643)</div>
+
+          {/* Key Metrics Bar */}
+          <div className="grid grid-cols-4 gap-6 max-w-5xl mt-12">
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-lg">
+              <div className="text-3xl font-bold text-blue-400 mb-2">$50M+</div>
+              <div className="text-xs text-slate-400 uppercase tracking-wider">Total Fund Size</div>
+            </div>
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-lg">
+              <div className="text-3xl font-bold text-green-400 mb-2">3-5</div>
+              <div className="text-xs text-slate-400 uppercase tracking-wider">RIA Acquisitions</div>
+            </div>
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-lg">
+              <div className="text-3xl font-bold text-purple-400 mb-2">18-24mo</div>
+              <div className="text-xs text-slate-400 uppercase tracking-wider">Hold Period</div>
+            </div>
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-lg">
+              <div className="text-3xl font-bold text-yellow-400 mb-2">10X</div>
+              <div className="text-xs text-slate-400 uppercase tracking-wider">Target MOIC</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="flex justify-between items-end">
+          <div>
+            <div className="text-sm text-slate-400 mb-1">Investment Thesis</div>
+            <div className="text-xs text-slate-600">Traditional RIAs (1-1.5x revenue) → On-Chain Fintech (8-12x revenue)</div>
+          </div>
+          <div className="text-right">
+            <div className="text-xs text-slate-600 uppercase tracking-widest">ERC-3643 Tokenized LP</div>
+            <div className="text-xs text-slate-700 mt-1">Delaware Limited Partnership | SEC Compliant</div>
           </div>
         </div>
       </div>
